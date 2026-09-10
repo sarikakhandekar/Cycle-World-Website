@@ -1,0 +1,189 @@
+ .box11 {
+     height: 700px;
+     width: 100%;
+     background-image: url(https://choosemybicycle.com/cdn/shop/files/ebikes-landing-jumbotron_1600x.webp?v=1740560587);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     cursor: pointer;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     padding: 20px;
+     position: relative;
+     bottom: 170px;
+ }
+ 
+ .text3,
+ .text4 {
+     font-size: 40px;
+     font-weight: bold;
+     color: black;
+     cursor: pointer;
+ }
+ 
+ .text5 {
+     font-size: 20px;
+     color: black;
+ }
+ 
+ .text5:hover {
+     color: rgb(20, 141, 189);
+ }
+ 
+ .text6:hover {
+     color: rgb(20, 141, 189);
+ }
+ 
+ .text6 {
+     font-size: 16px;
+     color: black;
+     max-width: 600px;
+     margin-top: 10px;
+ }
+ 
+ .text3:hover,
+ .text4:hover {
+     color: rgb(20, 141, 189);
+ }
+ 
+ .btn-container {
+     display: flex;
+     gap: 15px;
+     margin-top: 30px;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+ 
+ .button-group {
+     display: flex;
+     gap: 15px;
+     align-items: center;
+ }
+ 
+ .btn12,
+ .btn13 {
+     width: 150px;
+     height: 45px;
+     padding: 0;
+     border-radius: 5px;
+     cursor: pointer;
+     border: 1px solid black;
+     transition: 0.3s;
+     margin-left: 0;
+     font-weight: 700;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .btn12 {
+     background-color: black;
+     color: white;
+ }
+ 
+ .btn12:hover {
+     background-color: white;
+     color: black;
+ }
+ 
+ .btn13 {
+     background-color: white;
+     color: black;
+ }
+ 
+ .btn13:hover {
+     background-color: black;
+     color: white;
+ }
+ 
+ @media (max-width: 768px) {
+     .box11 {
+         height: 500px;
+     }
+     .text3,
+     .text4 {
+         font-size: 28px;
+     }
+     .text5 {
+         font-size: 18px;
+     }
+     .text6 {
+         font-size: 14px;
+     }
+ }
+ 
+ @media (max-width: 1024px) {
+     .box11 {
+         bottom: 0;
+         height: 600px;
+     }
+     .text3,
+     .text4 {
+         font-size: 35px;
+     }
+     .text6 {
+         max-width: 500px;
+     }
+     .button-group {
+         justify-content: center;
+     }
+ }
+ 
+ @media (max-width: 768px) {
+     .box11 {
+         bottom: 0;
+         height: 500px;
+         background-position: center;
+     }
+     .text3,
+     .text4 {
+         font-size: 28px;
+     }
+     .text5 {
+         font-size: 18px;
+     }
+     .text6 {
+         font-size: 14px;
+         max-width: 90%;
+     }
+     .button-group {
+         flex-direction: row;
+         gap: 10px;
+         justify-content: center;
+     }
+     .btn12,
+     .btn13 {
+         width: 130px;
+         height: 40px;
+         font-size: 14px;
+     }
+ }
+ 
+ @media (max-width: 480px) {
+     .box11 {
+         height: 420px;
+         padding: 10px;
+     }
+     .text3,
+     .text4 {
+         font-size: 22px;
+     }
+     .text5 {
+         font-size: 15px;
+     }
+     .text6 {
+         font-size: 12px;
+     }
+     .button-group {
+         flex-direction: column;
+         gap: 12px;
+     }
+     .btn12,
+     .btn13 {
+         width: 180px;
+         height: 40px;
+     }
+ }

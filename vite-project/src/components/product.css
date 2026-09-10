@@ -1,0 +1,91 @@
+
+.cycle-card {
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.cycle-card:hover {
+  transform: translateY(-5px);
+}
+
+
+@media (min-width: 1200px) {
+
+  .cycle-card img {
+    height: 300px;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .cycle-card img {
+    height: 260px !important;
+  }
+
+  .card-body h5 {
+    font-size: 18px;
+  }
+
+  .card-body p {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 95%;
+  }
+
+  .row.mb-4 > div {
+    margin-bottom: 10px;
+  }
+
+  .cycle-card {
+    margin: auto;
+    max-width: 350px;
+  }
+
+  .cycle-card img {
+    height: 250px !important;
+  }
+
+  .card-body h4 {
+    font-size: 20px;
+  }
+
+}
+.container h2:hover{
+  color: #00aaff;
+}
+
+@media (max-width:480px){
+
+  .container {
+    padding: 10px;
+  }
+
+  .cycle-card {
+    width: 100%;
+  }
+
+  .cycle-card img {
+    height: 220px !important;
+  }
+
+  .card-body h5 {
+    font-size: 16px;
+  }
+
+  .card-body p {
+    font-size: 13px;
+  }
+
+  .d-flex.gap-2.mt-auto button {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+}

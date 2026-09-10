@@ -1,0 +1,98 @@
+.footer {
+  position: relative;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: white;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-top: 2px solid skyblue;
+  box-shadow: 0 0 20px skyblue;
+  opacity: 0.4;
+}
+
+.bike {
+  position: absolute;
+  top: 10px;
+  right: -50px;
+  font-size: 40px;
+  animation: ride 8s linear infinite;
+}
+
+@keyframes ride {
+  0% {
+    right: -50px;
+  }
+  100% {
+    right: 110%;
+  }
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+
+.footer-box {
+  flex: 1;
+  min-width: 200px;
+  padding: 15px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.footer-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px skyblue;
+}
+
+.footer-box h2,
+.footer-box h3 {
+  color: skyblue;
+}
+
+.footer-box a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.footer-box a:hover {
+  color: skyblue;
+  padding-left: 5px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  color: #aaa;
+  position: relative;
+  z-index: 2;
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bike {
+    font-size: 24px;
+  }
+}

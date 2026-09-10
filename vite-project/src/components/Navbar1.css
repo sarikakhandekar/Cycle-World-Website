@@ -1,0 +1,132 @@
+.movecontainer {
+  width: 100%;
+  height: 50px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.Navbar1 {
+  height: 80px;
+  width: 100%;
+  background-color: peru;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: fixed;
+  top: 50px; 
+  left: 0;
+  z-index: 999;
+}
+
+body {
+  padding-top: 130px; 
+}
+
+
+ .logo {
+  font-size: 35px;
+  font-weight: 600;
+  color: black;
+  letter-spacing: 3px;
+  cursor: pointer;
+  font-family: 'Lucida Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  bottom: 20px;
+
+}
+
+.icon1 {
+  color: yellow;
+  background-color: black;
+  padding: 3px;
+  border-radius: 50%;
+  font-size: 30px;
+  transition: transform 0.3s ease;
+}
+
+.icon1:hover {
+  transform: scale(1.2);
+}
+
+.logo span {
+  color: #111;
+}
+.logo:hover,
+.logo:hover span {
+  color: #00aaff;
+}
+.Logo1 img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+  position: relative;
+  bottom: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+  .Navbar1 {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  .Logo1 img {
+    height: 38px;
+  }
+
+  .icon1 {
+    font-size: 24px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .Navbar1 {
+    padding: 8px 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .Logo1 img {
+    height: 30px;
+  }
+
+  .icon1 {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  .Logo1 img {
+    height: 25px;
+  }
+
+  .icon1 {
+    font-size: 15px !important;
+  }
+}

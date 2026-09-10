@@ -1,0 +1,235 @@
+ .box10 {
+   height: 333px;
+   width: 100%;
+   /* background: brown; */
+   position: relative;
+   bottom: 270px;
+   background-image: url(//choosemybicycle.com/cdn/shop/files/page-breaker-bicycle.jpg?v=1746613833);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   cursor: pointer;
+
+ }
+
+ .text1 {
+   position: relative;
+   top: 40px;
+   left: 20px;
+   color:white;
+   cursor: pointer;
+   animation: fadeInUp 2s ease;
+ }
+
+ .text1:hover {
+   color:black;
+ }
+
+ @keyframes fadeInUp {
+   from {
+     opacity: 0;
+     transform: translateY(30px);
+   }
+
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+
+
+ .text2 {
+   position: relative;
+   left: 77%;
+   top: 38%;
+   color:white;
+   cursor: pointer;
+   animation: fadeInUp 2s ease;
+ }
+
+ .text2:hover {
+   color:black;
+ }
+
+ @keyframes fadeInUp {
+   from {
+     opacity: 0;
+     transform: translateY(30px);
+   }
+
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+
+
+ .btn11 {
+   height: 45px;
+   width: 12%;
+   background: black;
+   color: white;
+   position: relative;
+   left: 85%;
+   top: 40%;
+   border-radius: 35px;
+   border: none;
+   cursor: pointer;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .icon2 {
+   position: relative;
+   left: 80%;
+   top: 123px;
+   background-color: black;
+   color: white;
+   cursor: pointer;
+ }
+
+ .btn11:hover {
+   background-color: white;
+   color: black;
+ }
+
+ .modalOverlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+
+   width: 100%;
+   height: 100%;
+
+   background: rgba(0, 0, 0, 0.8);
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   z-index: 0;
+ }
+
+ .modalContent {
+   position: relative;
+   width: 80%;
+   max-width: 800px;
+   background: white;
+   padding: 20px;
+   border-radius: 10px;
+ }
+
+ .closeBtn {
+   position: absolute;
+   top: -10px;
+   right: -10px;
+   width: 35px;
+   height: 35px;
+   border: none;
+   border-radius: 50%;
+   color: white;
+   font-size: 18px;
+   cursor: pointer;
+ }
+ /* ================= EXTRA RESPONSIVE ================= */
+
+@media (max-width: 1200px) {
+
+  .box10 {
+    bottom: 0;
+  }
+
+  .text2 {
+    left: 70%;
+  }
+
+  .btn11 {
+    width: 150px;
+    left: 75%;
+    white-space: nowrap;
+  }
+
+  .icon2 {
+    left: 78%;
+  }
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 768px) {
+
+  .box10 {
+    height: 280px;
+    bottom: 0;
+    overflow: hidden;
+  }
+
+  .text1 {
+    top: 30px;
+    left: 20px;
+    font-size: 16px;
+  }
+
+  .text2 {
+    left: 50%;
+    top: 100px;
+    font-size: 15px;
+  }
+
+  .btn11 {
+    width: 140px;
+    height: 40px;
+    left: 50%;
+    top: 130px;
+    white-space: nowrap;
+    transform: translateX(-50%);
+  }
+
+  .icon2 {
+    left: 65%;
+    top: 135px;
+  }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 480px) {
+
+  .box10 {
+    height: 250px;
+    bottom: 0;
+  }
+
+  .text1 {
+    top: 20px;
+    left: 15px;
+    font-size: 13px;
+  }
+
+  .text2 {
+    left: 15px;
+    top: 75px;
+    font-size: 13px;
+  }
+
+  .btn11 {
+    width: 130px;
+    height: 38px;
+    left: 15px;
+    top: 125px;
+    font-size: 13px;
+    white-space: nowrap;
+    transform: none;
+  }
+
+  .icon2 {
+    left: 160px;
+    top: 130px;
+  }
+
+}
